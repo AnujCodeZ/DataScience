@@ -44,3 +44,7 @@ def dot(v: Vector, w: Vector) -> float:
 def magnitude(v: Vector) -> float:
     """Returns magnitude (or length) of v"""
     return math.sqrt(dot(v, v))
+
+def distance(v: Vector, w: Vector) -> float:
+    """Computes the distance between v and w"""
+    return magnitude(subtract(v, w))
